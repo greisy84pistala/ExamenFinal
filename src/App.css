@@ -1,0 +1,109 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-size: 400% 400%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    background: linear-gradient(45deg, rgb(233, 59, 7), rgb(246, 246, 20), rgb(238, 238, 236));
+    width: 100%;
+    animation: cambiar 10s ease infinite;
+}
+
+.button_class {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 60%;
+    background-color: #eabfaf;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+    background: url("https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png");
+    background-size: 100%;
+}
+
+.App-link {
+    color: #156706;
+}
+
+.barra {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(245, 245, 202);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menu li {
+    margin-left: 15px;
+}
+
+.menu li:hover {
+    background-color: rgba(1, 1, 1, 0.184);
+}
+
+.link {
+    color: rgb(21, 0, 251);
+}
+
+.img1 {
+    float: right;
+    width: 250px;
+}
+
+.tex {
+    float: right;
+}
+
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
